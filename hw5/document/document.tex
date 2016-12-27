@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\newtheorem{claim}{Claim}
+\newtheorem{lemma}{Lemma}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{mdframed}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usetikzlibrary{arrows}
+\usepackage{subcaption}
+\usepackage{enumerate}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\title{CS 250: Homework 5}
+\author{Michael Lin}
+\begin{document}
+\maketitle
+\section*{Problem 1}
+Write-through caches propagate new value to lower level memory as soon as store writes to this level. Similarly, write-non-allocate caches write to lower level memory when it encounters a write miss. Since write-through caches update new value to lower level memory immediately, there is no need to read a missed block before writing it, therefore write-non-allocate are used with write-through caches.
+
+\section*{Problem 2}
+Since 90 $\%$ of L1 accesses are hits, then 10 $\%$ of L1 accesses are misses. Since 100 $\%$ of L2 accesses are hits, then 0 $\%$ of L2 accesses are misses. 
+\begin{align*}
+t_{L1 avg} &= t_{L1 hit} + \%_{L1 miss}\times t_{L1 miss} \\
+&= t_{L1 hit} + \%_{L1 miss}\times t_{L2 avg} \\
+&= t_{L1 hit} + \%_{L1 miss}\times (t_{L2 hit} + \%_{L2 miss}\times t_{L2 miss})\\
+&= 1 \text{ ns} + 10 \% \times (10\text{ ns} + 0 \%) \\
+&= 1 \text{ ns} + 1\text{ ns} \\
+&= 2\text{ ns}
+\end{align*}
+Therefore, the average memory latency as seen by the processor core is 2 ns.
+
+
+\section*{Problem 3}
+\begin{itemize}
+	\item[(a)] Given 64-bit machine, there are $2^{64}$ virtual addresses. Each page is 64 KB, which is the same as:
+		$$64 \text{ KB} = 64 \times 1024 \text{ B} = 2^6 \times 2^{10} \text{ B} = 2^{16} \text{ B}$$
+	Since each virtual address corresponds to 1 B, there are $2^{64}/2^{16} = 2^{48}$ virtual pages per process.
+	
+	
+	\item[(b)] 4 GB of physical memory is equivalent to $2^{32}$ B. From before, each page is 64 KB, or equivalently, $2^{16}$ B. Therefore, there are $2^{32}/2^{16} = 2^{16}$ physical pages.
+	
+	
+	\item[(c)] Each page is 64 KB, which, as previously calculated, is equal to $2^{16}$ B. Thus, the page offset has 16 bits. The VPN has the remaining bits in the virtual address, which is $64-16 = 48$ bits. The physical address, as calculated before, has 20 bits. The PPN has the remaining bits in the physical address, which is $32-16 = 16$ bits. Therefore, in the translation from a virtual address to a physical address, 48 bits of VPN are mapped to 16 bits of PPN.
+	
+	
+	\item[(d)] Since each PPN has 16 bits, the PTE needs to be 16 bits, or equivalently 2 B, not including valid bits.
+	
+	\item[(e)] Assuming PTEs are 16 bits, or equivalently 2 B, each page will hold $2^{16}/2 = 2^{15}$ PTEs.
+	
+	\item[(f)] Each pointer in a 64-bit machine is 64 bits, which is equivalent to 8 B. Since each page is $2^{16}$ B, each page holds $2^{16}/2^3 = 2^{13}$ pointers.
+	
+	\item[(g)] From (a), we have $2^{48}$ pages per processes. Each PTE is 2 B. Thus, a flat page table for a single process would be $2^{48} \times 2 \text{ B} = 2^{49} \text{ B}$.
+	
+	\item[(h)] In 64-bits, the address 35012 is:
+	$$0000 \,\, 0000\,\, 0000\,\, 0000\,\, 1000\,\, 1000\,\, 1100\,\, 0100$$
+	Both virtual and physical page offset are the same, which is the least significant 16 bits:
+	$$ 1000\,\, 1000\,\, 1100\,\, 0100$$
+	
+	\item[(i)] Not necessarily. TLB miss could occur if the mapping from VPN to PPN is not in the TLB, but this mapping could be in the page table, in which case page fault would not occur.
+\end{itemize}
+
+
+
+\end{document}

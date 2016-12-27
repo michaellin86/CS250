@@ -1,0 +1,2 @@
+store 0x000000 miss
+load 0x000001 miss adbeef00

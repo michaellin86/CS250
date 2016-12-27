@@ -1,0 +1,11 @@
+store 0x345678 miss
+load 0x345677 miss 003a4b00
+store 0x005670 miss
+store 0x005674 miss
+load 0x005672 miss 5678ffffdef01357
+store 0x105671 miss
+load 0x505679 miss 000000
+store 0x005675 hit
+store 0x755671 miss
+load 0x105670 miss 009900
+load 0x345677 hit 003a4b00

@@ -1,0 +1,55 @@
+﻿Rubric for Grading Homework #1
+This rubric is meant to cover most responses. Highly unusual answers that are not covered 
+by this rubric will be graded at the discretion of the TAs. 
+-------------------------------------------------------------------
+
+** Problems 1-4)
+To get all points, students must get both the answer correctly and show their work
+Correct answer, doesn't show work, 3 points off
+Shows work but has incorrect answer, 3 points off
+No work and incorrect/no answer, 5 points off
+
+** Problems 5)
+Wrong answer, 3 points off
+No answer, 5 points off
+
+** Problem 6) 
+Correct answer, no explanation, 3 points off
+Incorrect answer, but has explanation, 3 points off
+No explanation and incorrect/no answer, 5 points off
+
+** Problem 7 a - e)
+Wrong/blank answer, 1 point off per part
+
+** Problem 8)
+Wrong answer with good explanation, 2 points off
+Wrong answer with poor explanation, 3 points off 
+Wrong answer with no explanation, 4 points off
+No answer, 5 points off
+
+** Problem 9)
+No answer, 10 points off
+No mention of speedup or change in run time, 8 points off
+If the answer is unexpected, student must give reasonable explanation, or 5 points off 
+
+** Problem 10)
+No submission, 10 points off
+Doesn’t compile or immediately fails, 9 points off
+Code does not return N numbers, 5 points off
+Code returns incorrect numbers, 5 points off
+
+** Problem 11)
+No submission, 20 points off
+Doesn’t compile or immediately fails, 18 points off
+Doesn’t use recursion, 16 points off 
+Code returns incorrect numbers, 10 points off
+
+** Problem 12) - TAs will test with their own stats files  
+No submission, 50 points off
+Doesn’t compile or immediately fails, 45 points off
+Doesn't use malloc, 40 points off
+Returns incorrect order, 10 points off
+Returns incorrect values, 15 points off
+Doesn’t deallocate memory, 10 points off
+Doesn't code sorting function herself, 10 point off
+Output not formatted correctly (# of lines equal to # of players), 5 points off

@@ -1,0 +1,35 @@
+store 0xff0200 miss
+load 0xff0201 miss da55dead
+store 0xff0a32 miss
+load 0xff0a32 miss b4f7f1044fdeae8b
+load 0xb09432 miss 00000000000000000000000000
+load 0x5ed435 miss 000000000000
+load 0x83543d miss 000000
+store 0x47563d miss
+load 0x2ec836 miss 0000000000
+load 0xb8be34 miss 0000
+load 0xb8be34 hit 0000
+load 0x8d0a32 miss 0000000000000000000000
+load 0xff0a9c miss 0000
+load 0xb09496 miss 0000000000000000
+store 0x5ed495 miss
+load 0x835493 miss 0000000000000000
+store 0x47569e miss
+store 0xff0ab5 miss
+store 0xb094b4 miss
+load 0x5ed4bf miss 00
+store 0x8354b5 miss
+store 0x4756bf miss
+store 0x2ec8bb miss
+load 0xbb50bb miss 0000000000
+store 0xb8beb6 miss
+store 0x8d0abc miss
+load 0xff0ac5 miss 000000000000
+store 0xb094c4 miss
+load 0x5ed4c0 miss 00
+load 0x5ed4f1 miss 0000000000000000000000000000
+store 0x8354f2 miss
+store 0x4756f9 miss
+load 0x2ec8ff miss 00
+store 0xbb50f3 miss
+load 0xb8befd miss 000000

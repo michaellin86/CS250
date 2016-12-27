@@ -1,0 +1,8 @@
+- Michael Lin (QL38)
+- 10 hours
+- Didn't work with anyone
+- Asked for help during recitation
+- question4: "A,B,C" are inputs, "Output" is output
+- question5: "A,B,C" are inputs on left, "Output 2, Output 1" are outputs on right
+- question6: clock, In1, In2 on upper left corner; output on upper right corner
+- question7: go to "main" circuit, inputs "a,b" on left, along with "Cin" (should be set to 0); output and "Cout" on right

@@ -1,0 +1,23 @@
+store 0x34ab00 miss
+store 0x34ab00 miss
+load 0x2a17f0 miss 0000
+load 0x2a17f0 hit 00000000
+load 0x34ab00 miss 19ac
+store 0x000000 miss
+store 0x000002 miss
+store 0x000004 miss
+store 0x000006 miss
+load 0x000000 miss 12341234
+store 0x000006 hit
+load 0x000001 hit 3412
+store 0xa00000 miss 
+store 0xb00000 miss
+store 0xc00000 miss
+store 0xd00000 miss
+load 0xa00000 miss 1111111111111111
+store 0xe00000 miss
+load 0xb00000 miss 22222222
+load 0xb00000 hit 22222222
+load 0xd00000 miss 44444444
+load 0xc00000 miss 33333333
+load 0xc00000 hit 33333333

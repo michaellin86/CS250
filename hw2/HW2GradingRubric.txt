@@ -1,0 +1,42 @@
+﻿Rubric for Grading Homework #2
+This rubric is meant to cover most responses. Highly unusual answers that are not covered 
+by this rubric will be graded at the discretion of the TAs. 
+
+
+MIPS Instruction Set
+
+
+Problems 1 and 2)
+no work required
+Mostly correct answer with small mistake, 2 points off
+Wrong answer, 3 points off
+No answer, 5 points off
+
+
+Assembly Language Programming in MIPS
+
+
+Problem 3)
+No submission, 20 points off
+Code immediately fails, 18 points off
+Code does not return N numbers, 10 points off
+Code returns incorrect numbers, 10 points off
+
+
+Problem 4)
+No submission, 40 points off
+Immediately fails, 36 points off
+Doesn’t use recursion 32 points off
+Doesn’t use proper calling conventions, or return conventions 15 points off 
+Code returns incorrect numbers, 20 points off
+
+
+Problem 5) - TAs will test with their own input strings 
+No submission, 50 points off
+Immediately fails, 45 points off
+Does not allocate memory on the heap, 30 points off
+Doesn’t proper calling conventions, or return conventions, 20 points off
+Returns incorrect order, 15 points off
+Returns incorrect value, 15 points off
+Sorts values in incorrect order (descending instead of ascending), 5 points off
+Returns output in incorrect format, 5 points off

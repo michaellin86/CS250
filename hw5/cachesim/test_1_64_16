@@ -1,0 +1,35 @@
+store 0xff0200 7 bada55deadbeef
+load 0xff0201 4
+store 0xff0a32 11 b4f7f1044fdeae8b97e0f1
+load 0xff0a32 8
+load 0xb09432 13
+load 0x5ed435 6
+load 0x83543d 3
+store 0x47563d 1 e9
+load 0x2ec836 5
+load 0xb8be34 2
+load 0xb8be34 2
+load 0x8d0a32 11
+load 0xff0a9c 2
+load 0xb09496 8
+store 0x5ed495 6 741b9137b803
+load 0x835493 8
+store 0x47569e 1 57
+store 0xff0ab5 5 bf579f6f3a
+store 0xb094b4 4 d91bf31e
+load 0x5ed4bf 1
+store 0x8354b5 1 66
+store 0x4756bf 1 bb
+store 0x2ec8bb 4 00fb1ab4
+load 0xbb50bb 5
+store 0xb8beb6 4 61849a70
+store 0x8d0abc 3 bdb975
+load 0xff0ac5 6
+store 0xb094c4 4 45b993da
+load 0x5ed4c0 1
+load 0x5ed4f1 14
+store 0x8354f2 13 9185e6b73b4fd65ec3fef783cb
+store 0x4756f9 4 da4efd51
+load 0x2ec8ff 1
+store 0xbb50f3 2 5dc6
+load 0xb8befd 3
